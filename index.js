@@ -1,10 +1,20 @@
+const { expect } = require("chai");
+
 function isPalindrome(word) {
+  let array = Array.from(word)
+  let palindrome = array.reverse().join('')
   // Write your algorithm here
+  if (word == palindrome) {
+    return true
+  }else {
+    return false
+  }
 }
 
 /* 
   Add your pseudocode here
 */
+//break up word, reverse array, put it back together
 
 /*
   Add written explanation of your solution here
